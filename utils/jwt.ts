@@ -22,7 +22,7 @@ export const signToken = ( id: string, email: string ) => {
 
 
 
-/* export const isValidToken = ( token: string ):Promise<string> => {
+export const isValidToken = ( token: string ):Promise<string> => {
     if ( !process.env.JWT_SECRET_SEED ) {
         throw new Error('No hay semilla de JWT - Revisar variables de entorno');
     }
@@ -37,9 +37,9 @@ export const signToken = ( id: string, email: string ) => {
             jwt.verify( token, process.env.JWT_SECRET_SEED || '', (err, payload) => {
                 if ( err ) return reject('JWT no es válido');
 
-                const { _id } = payload as { _id: string };
+                const { idUser } = payload as { idUser: string };
 
-                resolve(_id);
+                resolve(idUser);
 
             })
         } catch (error) {
@@ -49,5 +49,5 @@ export const signToken = ( id: string, email: string ) => {
 
     })
 
-} */
+}
 
