@@ -9,7 +9,7 @@ export const Datos: FC<Props> = ({ nameURL, url }) => {
   return (
     <>
       <Link href={url} passHref>
-        <a target="_blank" style={{ color: "orange" }}>
+        <a target="_blank" style={{ color: "orange",marginRight:10 }}>
           {nameURL}
         </a>
       </Link>
