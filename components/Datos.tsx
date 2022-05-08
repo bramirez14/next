@@ -1,17 +1,18 @@
+import React, { FC } from "react";
+import Link from "next/link";
 
-import React from 'react'
-import Link from 'next/link';
-
-export const Datos = () => {
+interface Props {
+  url: string;
+  nameURL: string;
+}
+export const Datos: FC<Props> = ({ nameURL, url }) => {
   return (
     <>
-     <Link href='https://www.bancogalicia.com/' passHref >
-     <a target="_blank" style={{color:'orange'}} >
-    Datos a guardar
-          
+      <Link href={url} passHref>
+        <a target="_blank" style={{ color: "orange" }}>
+          {nameURL}
         </a>
-     </Link>
-    
+      </Link>
     </>
-  )
-}
+  );
+};
