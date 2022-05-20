@@ -1,4 +1,4 @@
-import { AuthState } from '.';
+import { AuthState } from './';
 import { IUser } from '../../interfaces';
 
 

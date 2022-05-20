@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.7.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
     "@sequelize/core": "^7.0.0-alpha.10",
     "@types/bcryptjs": "^2.4.2",
-    "antd": "^4.19.5",
+    "antd": "^4.20.5",
     "axios": "^0.26.0",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.28.1",
